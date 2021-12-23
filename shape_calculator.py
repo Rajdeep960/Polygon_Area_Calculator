@@ -5,7 +5,7 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
-        formatString = f"Rectangle(width={self.width},height={self.height})"
+        formatString = f"Rectangle(width={self.width}, height={self.height})"
         return formatString
 
     def set_width(self, width):
@@ -34,7 +34,7 @@ class Rectangle:
         else :
             for i in range(self.height-2):
                 height_line = height_line + width_line + "\n"
-            picture = width_line + "\n" + height_line + width_line
+            picture = width_line + "\n" + height_line + width_line + "\n"
             return picture
 
     def get_amount_inside(self, anatherShape):
@@ -57,10 +57,9 @@ class Square(Rectangle):
         self.height = side
 
     def __str__(self):
-        formatString = f"Squre(side={self.width})"
+        formatString = f"Square(side={self.width})"
         return formatString
 
     def set_side(self, side):
         self.width = side
         self.height = side
-
